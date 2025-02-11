@@ -3,7 +3,7 @@ title: "VSCode メモ"
 emoji: "🌊"
 type: "tech"
 topics: ["vscode"]
-published: false
+published: true
 ---
 
 # VSCode 多用するショートカット
