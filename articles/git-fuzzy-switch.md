@@ -3,7 +3,7 @@ title: "gitとfzfを使ってブランチを切り替える"
 emoji: "📘"
 type: "tech"
 topics: ["git", "fzf"]
-published: false
+published: true
 ---
 
 https://zenn.dev/yamo/articles/5c90852c9c64ab
