@@ -10,7 +10,7 @@ https://zenn.dev/yamo/articles/5c90852c9c64ab
 
 こちらが良かった。いろいろ編集して、新規ブランチもそのまま作成できるようにしてみた。
 
-```zsh:.zshrc
+```shell:.zshrc
 function git-fuzzy-switch() {
     # 現在のブランチ名を取得
     local current_branch=$(git rev-parse --abbrev-ref HEAD)
@@ -64,7 +64,7 @@ https://github.blog/engineering/engineering-principles/scripting-with-github-cli
 
 Pull Requestの概要をプレビューする機能を追加して以下のようになった。
 
-```zsh:.zshrc
+```shell:.zshrc
 function github-fuzzy-switch() {
     local pr_number=$(gh pr list | fzf --height 80% --layout=reverse --preview "echo {} | awk '{print \$1}' | xargs gh pr view" --ansi | awk '{print $1}')
     if [ -n "$pr_number" ]; then
@@ -77,7 +77,7 @@ function github-fuzzy-switch() {
 
 エイリアスは以下の通り。
 
-```zsh:.zshrc
+```shell:.zshrc
 alias gfs="git-fuzzy-switch"
 alias ghfs="github-fuzzy-switch"
 ```
